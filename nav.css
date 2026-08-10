@@ -1,0 +1,10 @@
+.nav-links a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+@media (max-width: 900px) {
+  .nav-links a:nth-child(4) {
+    display: inline;
+  }
+}

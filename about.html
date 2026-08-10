@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about Luis A. Ramirez, a mechanical engineer and roboticist, and his interests beyond the lab." />
+  <title>About | Luis A. Ramirez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Luis Ramirez home">LR</a>
+      <div class="nav-links">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="Luis_Ramirez_CV.pdf" target="_blank" rel="noopener">CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-intro container">
+      <p class="eyebrow">ABOUT</p>
+      <div class="about-intro-grid">
+        <figure class="about-portrait">
+          <img src="assets/images/hobbies/me4.jpg" alt="Luis holding a painted portrait outdoors">
+        </figure>
+        <div class="bio-copy">
+          <p>I am a sixth-year Ph.D. student in Mechanical Engineering at Yale University, where I work in Professor Rebecca Kramer-Bottiglio's lab. I am currently a visiting researcher at Princeton University.</p>
+          <p>As a first-generation college student, my academic path began at Cypress College before I transferred to UC Irvine and later continued to Yale for my Ph.D. My research focuses on adaptive and amphibious robots that can change their shape and behavior to move effectively across different environments.</p>
+          <div class="about-actions">
+            <a class="button primary" href="mailto:luis.ramirez@yale.edu">Contact me</a>
+            <a class="button secondary" href="Luis_Ramirez_CV.pdf" target="_blank" rel="noopener">Full CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="education-section" aria-labelledby="education-heading">
+      <div class="container">
+        <div class="quiet-heading">
+          <p class="eyebrow">BACKGROUND</p>
+          <h2 id="education-heading">Education</h2>
+        </div>
+
+        <div class="education-list">
+          <article class="education-item">
+            <img class="school-mark" src="assets/images/yale-mark.svg" alt="Yale University mark">
+            <div class="education-copy">
+              <p class="education-date">Present</p>
+              <h3>Ph.D. Candidate, Mechanical Engineering</h3>
+              <p>Yale University</p>
+            </div>
+          </article>
+
+          <article class="education-item">
+            <img class="school-mark" src="assets/images/uci-mark.svg" alt="UC Irvine mark">
+            <div class="education-copy">
+              <p class="education-date">Undergraduate</p>
+              <h3>B.S., Mechanical Engineering</h3>
+              <p>University of California, Irvine</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section outside-section" aria-labelledby="outside-heading">
+      <div class="container">
+        <p class="eyebrow outside-label">OUTSIDE OF THE LAB</p>
+        <h2 id="outside-heading" class="visually-hidden">Outside of the lab</h2>
+        <p class="outside-intro">Outside the lab, I seek out new experiences and time outdoors. I enjoy hiking, skiing, sailing, photography, working on my car, and running when my knees allow it.</p>
+
+        <div class="hobby-gallery">
+          <figure><img src="assets/images/hobbies/ski.jpg" alt="Luis skiing on a mountain trail" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/ski2.jpg" alt="Luis carrying skis through a mountain town" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/hike2.jpg" alt="Luis hiking through a snowy forest" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/run.JPG" alt="Luis running in a road race" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/run2.jpg" alt="Luis and friends after a half marathon" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/hike4.JPG" alt="Luis hiking in the mountains" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/hike5.JPG" alt="Hikers ascending a snowy mountain" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/sail.jpg" alt="Luis sailing on the water" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/photo.jpg" alt="Luis taking a photograph by the coast" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/photograph2.jpg" alt="A sunlit forest trail in autumn" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/photograph3.jpg" alt="Sand dunes beneath a clear blue sky" loading="lazy"></figure>
+          <figure><img src="assets/images/hobbies/photograph4.jpg" alt="Golden sunlight filtering through trees onto a coastal trail" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner"><span>&copy; <span id="year"></span> Luis A. Ramirez</span><span>Mechanical Engineering &amp; Robotics</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

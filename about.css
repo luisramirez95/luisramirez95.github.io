@@ -1,0 +1,239 @@
+.about-intro {
+  padding: 82px 0 74px;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: .95fr 1.05fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-portrait {
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #e9ecef;
+}
+
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.bio-copy {
+  max-width: 650px;
+  color: #3d464f;
+  font-size: clamp(17px, 1.7vw, 20px);
+  line-height: 1.55;
+}
+
+.bio-copy p:first-child {
+  margin-top: 0;
+}
+
+.bio-copy .about-actions {
+  margin-top: 24px;
+}
+
+.education-section {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.quiet-heading {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.quiet-heading .eyebrow {
+  margin-bottom: 6px;
+}
+
+.quiet-heading h2 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(28px, 3.2vw, 40px);
+  font-weight: 600;
+  letter-spacing: -.03em;
+}
+
+.education-list {
+  margin-left: 150px;
+  border-top: 1px solid var(--line);
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 22px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.school-mark {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.education-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.education-copy .education-date {
+  margin-bottom: 2px;
+  color: #7a838c;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.education-copy h3 {
+  margin: 0 0 1px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(18px, 1.9vw, 22px);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -.015em;
+}
+
+.outside-section.section {
+  padding: 78px 0 90px;
+  background: #eef1f3;
+}
+
+.outside-label {
+  margin-bottom: 12px;
+}
+
+.outside-intro {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 34px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.hobby-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.hobby-gallery figure {
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #dfe3e7;
+}
+
+.hobby-gallery img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .about-intro {
+    padding: 68px 0 64px;
+  }
+
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .about-portrait {
+    max-width: 680px;
+  }
+
+  .quiet-heading {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .education-list {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-intro {
+    padding: 52px 0 54px;
+  }
+
+  .bio-copy {
+    font-size: 17px;
+  }
+
+  .education-section {
+    padding: 48px 0;
+  }
+
+  .education-item {
+    grid-template-columns: 42px 1fr;
+    gap: 15px;
+    padding: 17px 0;
+  }
+
+  .school-mark {
+    width: 38px;
+    height: 38px;
+  }
+
+  .outside-section.section {
+    padding: 60px 0 68px;
+  }
+
+  .outside-label {
+    margin-bottom: 10px;
+  }
+
+  .outside-intro {
+    margin-bottom: 26px;
+    font-size: 16px;
+  }
+
+  .hobby-gallery {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .hobby-gallery figure {
+    border-radius: 14px;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 760px) {
+  .hobby-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
