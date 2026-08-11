@@ -5,7 +5,7 @@
 .about-intro-grid {
   display: grid;
   grid-template-columns: .95fr 1.05fr;
-  gap: 60px;
+  gap: clamp(26px, 5vw, 60px);
   align-items: center;
 }
 
@@ -115,14 +115,40 @@
   background: #eef1f3;
 }
 
-.outside-label {
-  margin-bottom: 12px;
+.outside-feature {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(26px, 5vw, 60px);
+  align-items: center;
+  margin-bottom: 34px;
+}
+
+.outside-feature-image {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #dfe3e7;
+}
+
+.outside-feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.outside-section .outside-title {
+  margin: 0 0 18px;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(30px, 3.4vw, 46px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -.025em;
 }
 
 .outside-intro {
   width: 100%;
   max-width: none;
-  margin: 0 0 34px;
+  margin: 0;
   color: var(--muted);
   font-size: 17px;
   line-height: 1.65;
@@ -130,7 +156,7 @@
 
 .hobby-gallery {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -213,27 +239,28 @@
     padding: 60px 0 68px;
   }
 
-  .outside-label {
-    margin-bottom: 10px;
+  .outside-feature {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .outside-feature-image {
+    max-width: 680px;
+  }
+
+  .outside-title {
+    margin-bottom: 12px;
   }
 
   .outside-intro {
-    margin-bottom: 26px;
     font-size: 16px;
   }
 
   .hobby-gallery {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 6px;
   }
 
   .hobby-gallery figure {
-    border-radius: 14px;
-  }
-}
-
-@media (min-width: 561px) and (max-width: 760px) {
-  .hobby-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-radius: 8px;
   }
 }
