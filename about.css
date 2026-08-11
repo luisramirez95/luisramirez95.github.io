@@ -124,6 +124,8 @@
 }
 
 .outside-feature-image {
+  width: min(100%, 430px);
+  justify-self: start;
   margin: 0;
   overflow: hidden;
   border-radius: 18px;
